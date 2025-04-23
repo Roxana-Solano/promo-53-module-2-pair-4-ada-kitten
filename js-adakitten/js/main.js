@@ -36,3 +36,11 @@ const kitterThree = `<li class="card">
                 </li>`;
 
 listCat.innerHTML = kitterOne + kitterTwo + kitterThree;
+
+const buttonplus = document.querySelector (".js-btn-add");
+const newform = document.querySelector(".new-form");
+buttonplus.addEventListener("click", (e) => {
+    e.preventDefault();
+    newform.classList.toggle("collapsed");
+});
+
