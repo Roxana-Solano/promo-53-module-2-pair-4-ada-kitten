@@ -44,3 +44,11 @@ buttonplus.addEventListener("click", (e) => {
     newform.classList.toggle("collapsed");
 });
 
+const cancelar = document.querySelector (".button-cancel");
+cancelar.addEventListener("click",(e) =>{
+e.preventDefault();
+
+
+
+}
+);
