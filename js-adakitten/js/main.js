@@ -43,24 +43,19 @@ const cancelButton = document.querySelector(".button-cancel");
 const form = document.querySelector(".form");
 cancelButton.addEventListener("click", (e) => {
     e.preventDefault();
-    newform.classList.add("collapsed");
-    form.reset();
+    newform.classList.add("collapsed");//esto lo que hace es ocultar
+    form.reset();//esto lo limpia (formulario)
     
 });
 buttonplus.addEventListener("click", (e) => {
-    e.preventDefault();
+    e.preventDefault();// boton de + ( se oculta el formulario)
     newform.classList.toggle("collapsed");
 });
-
-<<<<<<< HEAD
-
-=======
-const cancelar = document.querySelector (".button-cancel");
-cancelar.addEventListener("click",(e) =>{
+const buttonbus = document.querySelector(".js_button-search");
+const description = document.querySelector(".js_in_search_desc")
+buttonbus.addEventListener("click", (e)=>{
 e.preventDefault();
+const valorDescription = description.value;
+})
 
-
-
-}
-);
->>>>>>> 0e01758ad32f6d9ff77f6bffa68eaa1352b51d95
+const kittenDesc1 = 
