@@ -39,8 +39,17 @@ listCat.innerHTML = kitterOne + kitterTwo + kitterThree;
 
 const buttonplus = document.querySelector (".js-btn-add");
 const newform = document.querySelector(".new-form");
+const cancelButton = document.querySelector(".button-cancel");
+const form = document.querySelector(".form");
+cancelButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    newform.classList.add("collapsed");
+    form.reset();
+    
+});
 buttonplus.addEventListener("click", (e) => {
     e.preventDefault();
     newform.classList.toggle("collapsed");
 });
+
 
