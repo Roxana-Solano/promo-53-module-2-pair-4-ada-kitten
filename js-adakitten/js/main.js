@@ -59,10 +59,22 @@ cancelButton.addEventListener("click", (e) => {
     form.reset();//esto lo limpia (formulario)
     
 });
-buttonplus.addEventListener("click", (e) => {
-    e.preventDefault();// boton de + ( se oculta el formulario)
-    newform.classList.toggle("collapsed");
-});
+// boton de + ( se oculta el formulario)
+    /*newform.classList.toggle("collapsed");*/
+    
+function showNewCatForm(buttonplus) {
+  
+  buttonplus.addEventListener("click", (e) => {
+    e.preventDefault();
+    buttonplus.classList.remove("collapsed");
+});}
+function hideNewCatForm(buttonplus) {
+  
+  buttonplus.addEventListener("click", (e) => {
+    e.preventDefault();
+    buttonplus.classList.add("collapsed");
+
+});}
 const buttonbus = document.querySelector(".js_button-search");
 const description = document.querySelector(".js_in_search_desc");
 
